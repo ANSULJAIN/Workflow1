@@ -15,9 +15,9 @@ jobs:
       - name: Add Meme to Pull Request
         run: |
           memes=(
-            "https://example.com/meme1.jpg"
-            "https://example.com/meme2.jpg"
-            "https://example.com/meme3.jpg"
+            "https://i.redd.it/q2yxabor3ji61.jpg"
+            "https://miro.medium.com/max/300/1*bko0KhUMQZxLvTkoY7V4GQ.jpeg"
+            "https://th.bing.com/th/id/R.da4db5039a721942080a02473ceee746?rik=bWCdO1CY5M%2bz9g&riu=http%3a%2f%2fwww.quickmeme.com%2fimg%2f2f%2f2f854b706148d14b8bd8e6a3cb46d6ac8b8367b6c4c42576b74810131b6eaaf2.jpg&ehk=GIaR9KZI40fXRRsYaPEwb4XGjnUB7slQDncHJOtZLbU%3d&risl=&pid=ImgRaw&r=0"
           )
 
           random_index=$(( RANDOM % ${#memes[@]} ))
