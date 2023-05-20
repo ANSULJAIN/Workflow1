@@ -28,8 +28,8 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "j.ansul@iitg.ac.in"
+          git config --local user.name "ANSULJAIN"
 
           git add README.md
           git commit -m "Add meme to push"
