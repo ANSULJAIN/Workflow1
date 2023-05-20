@@ -1,0 +1,26 @@
+name: Add Meme to Pull Request
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  add-meme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Add Meme to Pull Request
+        run: |
+          memes=(
+            "https://example.com/meme1.jpg"
+            "https://example.com/meme2.jpg"
+            "https://example.com/meme3.jpg"
+          )
+
+          random_index=$(( RANDOM % ${#memes[@]} ))
+          meme_url=${memes[$random_index]}
+
+          echo "![Meme]($meme_url)" >> $GITHUB_EVENT_PATH
