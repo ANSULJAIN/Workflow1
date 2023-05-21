@@ -17,8 +17,7 @@ jobs:
         run: |
           memes=(
             "https://i.imgflip.com/4hzqe0.jpg"
-            "https://i.pinimg.com/736x/96/6c/fd/966cfdaa3b9e34dafa5b4636d0681e58.jpg"
-            "https://i.imgflip.com/1jfj7m.jpg"
+            
           )
 
           random_index=$(( RANDOM % ${#memes[@]} ))
