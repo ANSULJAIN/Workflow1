@@ -33,4 +33,4 @@ jobs:
 
           git add README.md
           git commit -m "Add meme to push"
-          git push
+          git push origin HEAD:main
